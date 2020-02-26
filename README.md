@@ -80,7 +80,7 @@ python3 app.py
 
 ### Usage
 
-1. To list all the available moves for a particular figure at a particular field, type an URL using the following pattern:
+1. To list all the available moves for a particular figure at a particular field, type a URL using the following pattern:
 
 ```
 http://localhost:5000/api/v1/{chess-figure}/{current-field}
@@ -92,7 +92,7 @@ For example:
 http://localhost:5000/api/v1/king/a2
 ```
 
-2. To check if a particular move is possible, type an URL using the following pattern:
+2. To check if a particular move is possible, type a URL using the following pattern:
 
 ```
 http://localhost:5000/api/v1/{chess-figure}/{current-field}/{dest-field}
