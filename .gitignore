@@ -22,3 +22,5 @@ htmlcov/
 .coverage
 .coverage.*
 *,cover
+
+dominika_gajda.bundle
