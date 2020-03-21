@@ -20,7 +20,7 @@ def internal_error(error):
     return make_response(jsonify({"error": "Not found"}), 404)
 
 
-@app.route("/api/v1//<chess_figure>/<current_field>", methods=["GET"])
+@app.route("/api/v1/<chess_figure>/<current_field>", methods=["GET"])
 def get_possible_moves(chess_figure, current_field):
 
     # Check if the user passed correct field name
@@ -68,7 +68,7 @@ def get_possible_moves(chess_figure, current_field):
         return jsonify(response), 200
 
 
-@app.route("/api/v1//<chess_figure>/<current_field>/<dest_field>", methods=["GET"])
+@app.route("/api/v1/<chess_figure>/<current_field>/<dest_field>", methods=["GET"])
 def check_if_move_is_possible(chess_figure, current_field, dest_field):
 
     # Check if the user passed correct field name
